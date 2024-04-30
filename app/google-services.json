@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "863683524525",
+    "project_id": "meysimc-85b5d",
+    "storage_bucket": "meysimc-85b5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863683524525:android:a3a43a1bfded71d9f89324",
+        "android_client_info": {
+          "package_name": "com.example.inventory"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg4sJMdMB8LNG34ircO_3jOgpKw7h_7dM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State pressed -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#EA740C" /> <!-- Warna latar belakang dengan opacity 50% -->
+            <corners android:radius="10dp" /> <!-- Bisa diatur sesuai kebutuhan -->
+        </shape>
+    </item>
+    <!-- State default/normal -->
+    <item>
+        <shape>
+            <solid android:color="#E09859" /> <!-- Warna latar belakang dengan opacity 100% -->
+            <corners android:radius="10dp" /> <!-- Bisa diatur sesuai kebutuhan -->
+        </shape>
+    </item>
+</selector>

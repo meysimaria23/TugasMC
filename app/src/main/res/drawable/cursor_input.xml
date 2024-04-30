@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- cursor_color.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:width="2dp" />
+    <solid android:color="#000000" /> <!-- Ubah kode warna sesuai dengan warna yang Anda inginkan -->
+</shape>

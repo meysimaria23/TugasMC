@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Activity.EditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingBottom="16dp"
+                    android:text="Edit Item"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingBottom="16dp"
+                    android:text="Data"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!-- Field input nama item -->
+
+            <!-- Field input deskripsi item -->
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/roboto"
+                android:hint="Nama Item"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textCursorDrawable="@drawable/cursor_input"
+                tools:ignore="Autofill,HardcodedText,TextContrastCheck" />
+
+            <!-- Field input kuantitas item -->
+            <EditText
+                android:id="@+id/et_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/roboto"
+                android:hint="Deskripsi"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textCursorDrawable="@drawable/cursor_input"
+                tools:ignore="Autofill,HardcodedText,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/et_kuantitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/roboto"
+                android:hint="Kuantitas"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textCursorDrawable="@drawable/cursor_input"
+                tools:ignore="Autofill,HardcodedText,TextContrastCheck" />
+
+            <!-- Field input harga item -->
+            <EditText
+                android:id="@+id/et_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/roboto"
+                android:hint="Harga"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:textCursorDrawable="@drawable/cursor_input"
+                tools:ignore="Autofill,HardcodedText,TextContrastCheck" />
+
+            <!-- Field input kategori item -->
+            <EditText
+                android:id="@+id/et_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input"
+                android:clickable="true"
+                android:focusable="false"
+                android:fontFamily="@font/roboto"
+                android:hint="Kategori"
+                android:inputType="none"
+                android:padding="12dp"
+                android:textCursorDrawable="@drawable/cursor_input"
+                tools:ignore="Autofill,HardcodedText,KeyboardInaccessibleWidget,TextContrastCheck,TouchTargetSizeCheck" />
+
+            <!-- Area untuk menampilkan gambar yang diunggah -->
+            <ImageView
+                android:id="@+id/iv_result"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:background="#F1EEEE"
+                android:contentDescription="Gambar Item"
+                android:scaleType="fitXY"
+                tools:ignore="HardcodedText" />
+
+            <!-- Tombol untuk memilih gambar -->
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_btn"
+                android:letterSpacing="0.1"
+                android:text="Unggah Gambar"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,UnusedAttribute,TextContrastCheck" />
+
+            <!-- Tombol untuk menyimpan item -->
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn"
+                android:letterSpacing="0.1"
+                android:text="Update Item"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,UnusedAttribute,TextContrastCheck" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

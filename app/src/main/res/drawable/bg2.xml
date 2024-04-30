@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna default saat tombol tidak dalam keadaan ditekan atau difokuskan -->
+    <item android:state_pressed="false" android:state_focused="false">
+        <shape android:shape="rectangle">
+            <!-- Warna latar belakang default -->
+            <solid android:color="#85000000" />
+            <!-- Sudut radius -->
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <!-- Warna saat tombol dalam keadaan ditekan -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- Warna latar belakang saat ditekan -->
+            <solid android:color="#1E090909" />
+
+            <!-- Sudut radius -->
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+</selector>
+
+
